@@ -22,7 +22,6 @@ h2 {
   font-size: 2.25em;
   text-transform: uppercase;
   font-weight: normal;
-  border-bottom: solid 2px #c0211e;
   text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
 }
 
@@ -204,7 +203,8 @@ a:visited {
   width: 90%;
   margin: 10px auto 20px;
   transition: all 1s;
-  transition-delay: 2s;
+  transition-delay: .25s;
+  border-bottom: solid 2px #c0211e;
 }
 
 .about-us h2:hover {
@@ -270,4 +270,33 @@ a:visited {
   transform: translateY(25px) scale(1.05);
   transition: all 1s;
   opacity: 1;
+}
+
+.header-gallery {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 0;
+  border-top: solid 7px #c0211e;
+  border-radius: 50px 10px 0 0;
+}
+.header-gallery h2 {
+  width: 85%;
+  transition: all 1s;
+  transition-delay: .25s;
+  margin: 10px auto 20px;
+  border-bottom: solid 2px #c0211e;
+}
+
+.header-gallery h2:hover {
+  transition: all 1s;
+  transform: scale(1.05);
+  text-shadow: 0 0 7px #c0211e;
+}
+
+.slideshow {
+  width: 75%;
+  padding: 0 0 25px;
+  margin: auto;
+  border-radius: 50px 10px;
+  background-color: rgba(0,0,0,.5);
 }
