@@ -1,0 +1,137 @@
+/* Base Styles ------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: auto;
+  height: 120px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+li {
+  padding-right: 10px;
+  display: inline;
+}
+
+/* Pseudo-Classes ---------------------------------------------- */
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+  transition: all 1s;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.main-header a:hover {
+  color: #b03737;
+  transition: all .5s;
+}
+
+
+
+
+/* ---------------------------------------------- */
+
+
+.main-header {
+  display: inline-block;
+  width: 100%;
+  background-color: #111;
+  min-width: 1100px;
+}
+
+.topleft {
+  box-sizing: border-box;
+  height: 56px;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  margin-left: 50px;
+}
+
+.topright {
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+}
+
+.topright li {
+  padding: 0 10px;
+  border-right: solid 2px white;
+}
+
+.main-title {
+  background: url('../img/background.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  box-shadow: inset 0 -50px 50px 20px rgba(17,17,17,0.7),
+              inset 0 -50px 100px rgba(17,17,17,1),
+              0 20px 100px 50px rgba(17,17,17,1);
+  margin-top: -7px;
+  padding: 10% 10% 20%;
+  min-width: 1100px;
+  text-shadow: 0 2px 15px rgba(0,0,0,.7),
+               0 2px 2px rgba(0,0,0,.5);
+}
+
+.main-title span {
+  font-size: 2em;
+  font-weight: 500;
+  margin: auto;
+  padding-top: 5px;
+  width: 825px;
+  border-top: solid 3px #b03737;
+  display: block;
+}
+
+.title-text {
+  display: inline-block;
+  transition: all 5s ease-in-out;
+  transition-delay: 2.5s;
+}
+.title-text:hover {
+  transform: translateY(-10px) scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.arrow {
+  width: 150px;
+  display: block;
+  margin: 300px auto 0;
+  opacity: 0.3;
+  transition: all 1s;
+  transition-delay: .5s;
+}
+
+.arrow:hover {
+  transform: translateY(75px) scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+}
