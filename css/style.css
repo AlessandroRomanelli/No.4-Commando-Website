@@ -27,7 +27,9 @@ h2 {
 }
 
 h3 {
-
+  text-transform: uppercase;
+  font-weight: normal;
+  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
 }
 
 p {
@@ -145,16 +147,19 @@ a:visited {
 }
 
 .arrow {
-  width: 250px;
   display: block;
+  opacity: 0.3;
+}
+
+.first {
+  width: 250px;
   margin: 150px auto 0;
   padding: 100px 50px 0;
-  opacity: 0.3;
   transition: all 0.5s;
   transition-delay: 250ms;
 }
 
-.arrow:hover {
+.first:hover {
   transform: translateY(75px) scale(1.1);
   transition: all 1s;
   opacity: 1;
@@ -165,14 +170,32 @@ a:visited {
   border-radius: 50px 10px;
   border-top: solid 10px #c0211e;
   width: 75%;
-  padding: 5px 50px 50px;
-  text-align: center;
-  margin: 100px auto;
-  min-width: 1300px;
   height: 675px;
+  min-width: 1300px;
+  padding: 5px 50px 50px;
+  margin: 100px auto;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.about-us::after {
+  content: "";
+  background: url("../img/britain-flag.jpg");
+  background-size: cover;
+  border-radius: 50px 10px;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;;
+  z-index: -1;
 }
 
 .about-us h2 {
+  width: 90%;
+  margin: 10px auto 20px;
   transition: all 1s;
   transition-delay: 2s;
 }
@@ -203,6 +226,8 @@ a:visited {
 .first-about img,
 .second-about img {
   width: 400px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px 20px rgba(0,0,0,1)
 }
 
 .third-about {
@@ -225,4 +250,17 @@ a:visited {
 .third-about h3 {
   text-align: center;
   margin-bottom: 0;
+}
+
+.second {
+  width: 150px;
+  margin: 50px auto;
+  transition: all 0.5s;
+  transition-delay: 250ms;
+}
+
+.second:hover {
+  transform: translateY(25px) scale(1.05);
+  transition: all 1s;
+  opacity: 1;
 }
