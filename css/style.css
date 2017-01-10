@@ -19,7 +19,11 @@ h1 {
 }
 
 h2 {
-
+  font-size: 2.25em;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-bottom: solid 2px #c0211e;
+  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
 }
 
 h3 {
@@ -37,6 +41,21 @@ li {
 
 /* Pseudo-Classes ---------------------------------------------- */
 
+.main-header a:link {
+  text-decoration: none;
+  color: #fff;
+  transition: all 1s;
+}
+
+.main-header a:visited {
+  color: #fff;
+}
+
+.main-header a:hover {
+  color: #c0211e;
+  transition: all .5s;
+}
+
 a:link {
   text-decoration: none;
   color: #fff;
@@ -47,9 +66,13 @@ a:visited {
   color: #fff;
 }
 
-.main-header a:hover {
-  color: #b03737;
-  transition: all .5s;
+.about-us a:link {
+  text-decoration: none;
+  color: #c0211e;
+}
+
+.about-us a:visited {
+  color: #c0211e;
 }
 
 
@@ -107,7 +130,7 @@ a:visited {
   margin: auto;
   padding-top: 5px;
   width: 825px;
-  border-top: solid 3px #b03737;
+  border-top: solid 3px #c0211e;
   display: block;
 }
 
@@ -122,16 +145,84 @@ a:visited {
 }
 
 .arrow {
-  width: 150px;
+  width: 250px;
   display: block;
-  margin: 300px auto 0;
+  margin: 150px auto 0;
+  padding: 100px 50px 0;
   opacity: 0.3;
-  transition: all 1s;
-  transition-delay: .5s;
+  transition: all 0.5s;
+  transition-delay: 250ms;
 }
 
 .arrow:hover {
   transform: translateY(75px) scale(1.1);
   transition: all 1s;
   opacity: 1;
+}
+
+.about-us {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50px 10px;
+  border-top: solid 10px #c0211e;
+  width: 75%;
+  padding: 5px 50px 50px;
+  text-align: center;
+  margin: 100px auto;
+  min-width: 1300px;
+  height: 675px;
+}
+
+.about-us h2 {
+  transition: all 1s;
+  transition-delay: 2s;
+}
+
+.about-us h2:hover {
+  transition: all 1s;
+  transform: scale(1.05);
+  text-shadow: 0 0 7px #c0211e;
+}
+
+.first-about {
+  width: 43%;
+  float: left;
+}
+
+.second-about {
+  width: 43%;
+  float: right;
+}
+
+.first-about,
+.second-about {
+  width: 400px;
+  margin: 0 3%;
+  text-align: justify;
+}
+
+.first-about img,
+.second-about img {
+  width: 400px;
+}
+
+.third-about {
+  text-align: justify;
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+.first-about p,
+.second-about p,
+.third-about p {
+  border-top: solid 2px #c0211e;
+  padding-top: 5px;
+  margin-top: 3px;
+}
+
+.first-about h3,
+.second-about h3,
+.third-about h3 {
+  text-align: center;
+  margin-bottom: 0;
 }
