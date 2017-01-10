@@ -3,8 +3,9 @@
   <head>
     <title>No.4 Commando Website</title>
     <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/slideshow.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="scripts/javascript.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
   </head>
   <body>
     <header id="top" class="main-header">
@@ -16,15 +17,15 @@
           <li><a class="smoothScroll" href="#top">Home</a></li>
           <li><a class="smoothScroll" href=#about>About</a></li>
           <li><a class="smoothScroll" href="#gallery">Gallery</a></li>
-          <li><a class="smoothScroll" href="#">Unit Roster</a></li>
+          <li><a class="smoothScroll" href="#">Equipment</a></li>
           <li><a class="smoothScroll" href="#">Join Us</a></li>
         </ul>
       </div>
     </header>
     <div class="main-title">
         <div class="title-text">
-          <a href="http://steamcommunity.com/groups/No4Commando" target="_blank">
-          <h1> No.4 Commando </h1>
+          <a href="#">
+          <h1>No.4 Commando</h1>
           <span>ArmA3 WW2 Relaxed Milsim Unit</span>
           </a>
         </div>
@@ -56,22 +57,69 @@
 
         <div class="third-about">
           <h3> What makes us stick out from all the other units? </h3>
-          <p>We Commandos pride ourselves to define us as the old-school people that prefer to
-          see the enemy directly through the iron sight of our bolt-action rifles
-          rather than through some kind of high-power magnfication lens attached to an automatic rifle.
-          We face death from up close and we sure are not afraid to do so. Does not matter how dirty
-          the business, Commandos are known for doing it well.
+          <p>We take great pride to define ourselves as the old-school people. The ones that prefer to
+          see the enemy directly through the iron sight of our bolt-action rifles, rather than through
+          some kind of high-power magnfication lens attached to an automatic rifle.
+          We face Death from up close on the battlefield and yet its threat and menace finds and shall
+          find us unafraid. Doesn't matter how dirty, how dangerous the business, we do it well.
           </p>
           <a href="#gallery"><img class="arrow second" src="img/arrow.svg" alt="arrow" /></a>
         </div>
       </div>
-    </div>
-    <div id="gallery">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="img/gallery-1.jpg" style="width:100%">
+          <div class="text">Caption One</div>
+        </div>
 
-    </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="img/gallery-2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="img/gallery-3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="img/gallery-4.jpg" style="width:100%">
+          <div class="text">Caption Four</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="img/gallery-5.jpg" style="width:100%">
+          <div class="text">Caption Five</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="img/gallery-6.jpg" style="width:100%">
+          <div class="text">Caption Six</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
     <footer class="main-footer">
-      <p>Copyright 2016, <a href="https://github.com/AlessandroRomanelli/" target="_blank">Alessandro Romanelli</a>.</p>
+      <p>Copyright 2016, <a class="smoothScroll" href="https://github.com/AlessandroRomanelli/" target="_blank">Alessandro Romanelli</a>.</p>
       <a href="#top">Back to top &raquo;</a>
     </footer>
+    <script src="scripts/slideshow.js"></script>
   </body>
 </html>
