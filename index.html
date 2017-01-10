@@ -3,6 +3,8 @@
   <head>
     <title>No.4 Commando Website</title>
     <link rel="stylesheet" href="css/style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/javascript.js"></script>
   </head>
   <body>
     <header id="top" class="main-header">
@@ -11,11 +13,11 @@
       </span>
       <div class="topright">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href=#about>About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Unit Roster</a></li>
-          <li><a href="#">Join Us</a></li>
+          <li><a class="smoothScroll" href="#top">Home</a></li>
+          <li><a class="smoothScroll" href=#about>About</a></li>
+          <li><a class="smoothScroll" href="#gallery">Gallery</a></li>
+          <li><a class="smoothScroll" href="#">Unit Roster</a></li>
+          <li><a class="smoothScroll" href="#">Join Us</a></li>
         </ul>
       </div>
     </header>
@@ -26,7 +28,7 @@
           <span>ArmA3 WW2 Relaxed Milsim Unit</span>
           </a>
         </div>
-        <a href="#about"><img class="arrow first" src="img/arrow.svg" alt="arrow" /></a>
+        <a class="smoothScroll" href="#about"><img class="arrow first" src="img/arrow.svg" alt="arrow" /></a>
     </div>
     <div id="about" class="about-background">
       <div class="about-us">
