@@ -99,42 +99,41 @@ a:visited {
   min-width: 1000px;
 }
 
-.topleft {
-  box-sizing: border-box;
-  width: 20%;
-  margin: 16px 0 16px 2%;
-  text-transform: uppercase;
-  font-weight: bold;
-  float: left;
-}
+      .topleft {
+        box-sizing: border-box;
+        width: 20%;
+        margin: 16px 0 16px 2%;
+        text-transform: uppercase;
+        font-weight: bold;
+        float: left;
+      }
 
-.topleft span {
-  display: inline;
-}
+      .topleft span {
+        display: inline;
+      }
 
-.topright {
-  margin-right: 2%;
-  text-transform: uppercase;
-  font-weight: bold;
-  float: right;
-}
+      .topright {
+        margin-right: 2%;
+        text-transform: uppercase;
+        font-weight: bold;
+        float: right;
+      }
 
-.topright li {
-  padding: 0 10px;
-  border-right: solid 2px white;
-}
+      .topright li {
+        padding: 0 10px;
+        border-right: solid 2px white;
+      }
 
-.topright span {
-  padding-left: 10px;
-}
+      .topright span {
+        padding-left: 10px;
+      }
 
 .main-title {
-  background: url('../img/background.jpg') no-repeat center;
+  background: linear-gradient(to top, #111 5%, transparent 50%),
+              linear-gradient(to bottom, #111, transparent 1%),
+              url('../img/background.jpg') no-repeat center;
   background-size: cover;
   text-align: center;
-  box-shadow: inset 0 -50px 50px 20px rgba(17,17,17,0.7),
-              inset 0 -50px 100px rgba(17,17,17,1),
-              0 20px 100px 50px rgba(17,17,17,1);
   margin-top: -7px;
   padding: 10% 10% 20%;
   min-width: 1100px;
@@ -142,46 +141,46 @@ a:visited {
                0 2px 2px rgba(0,0,0,.5);
 }
 
-.main-title span {
-  font-size: 2em;
-  font-weight: 500;
-  margin: auto;
-  padding-top: 5px;
-  width: 825px;
-  border-top: solid 3px #c0211e;
-  display: block;
-}
+      .main-title span {
+        font-size: 2em;
+        font-weight: 500;
+        margin: auto;
+        padding-top: 5px;
+        width: 825px;
+        border-top: solid 3px #c0211e;
+        display: block;
+      }
 
-.title-text {
-  display: inline-block;
-  transition: all 5s ease-in-out;
-  transition-delay: 2.5s;
-  cursor: default;
-}
-.title-text:hover {
-  transform: translateY(-10px) scale(1.2);
-  transition: all .5s ease-in-out;
-}
+      .title-text {
+        display: inline-block;
+        transition: all 5s ease-in-out;
+        transition-delay: 2.5s;
+        cursor: default;
+      }
+      .title-text:hover {
+        transform: translateY(-10px) scale(1.2);
+        transition: all .5s ease-in-out;
+      }
 
-.arrow {
-  width: 150px;
-  display: block;
-  opacity: 0.3;
-}
+      .arrow {
+        width: 150px;
+        display: block;
+        opacity: 0.3;
+      }
 
-.first {
-  margin: 50px auto;
-  padding: 50px 0 0;
-  transition: all 0.5s;
-  transition-delay: 250ms;
-  align-content: center;
-}
+      .first {
+        margin: 50px auto;
+        padding: 50px 0 0;
+        transition: all 0.5s;
+        transition-delay: 250ms;
+        align-content: center;
+      }
 
-.first:hover {
-  transform: translateY(75px) scale(1.1);
-  transition: all 1s;
-  opacity: 1;
-}
+      .first:hover {
+        transform: translateY(75px) scale(1.1);
+        transition: all 1s;
+        opacity: 1;
+      }
 
 .about-us {
   background-color: rgba(0,0,0,0.3);
@@ -198,92 +197,92 @@ a:visited {
   box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-us::after {
-  content: "";
-  background: url("../img/britain-flag.jpg");
-  background-size: cover;
-  border-radius: 50px 10px;
-  opacity: 0.05;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;;
-  z-index: -1;
-}
+      .about-us::after {
+        content: "";
+        background: url("../img/britain-flag.jpg");
+        background-size: cover;
+        border-radius: 50px 10px;
+        opacity: 0.05;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;;
+        z-index: -1;
+      }
 
-.about-us h2 {
-  width: 90%;
-  margin: 10px auto 20px;
-  transition: all 1s;
-  transition-delay: .25s;
-  border-bottom: solid 2px #c0211e;
-}
+      .about-us h2 {
+        width: 90%;
+        margin: 10px auto 20px;
+        transition: all 1s;
+        transition-delay: .25s;
+        border-bottom: solid 2px #c0211e;
+      }
 
-.about-us h2:hover {
-  transition: all 1s;
-  transform: scale(1.05);
-  text-shadow: 0 0 7px #c0211e;
-}
+      .about-us h2:hover {
+        transition: all 1s;
+        transform: scale(1.05);
+        text-shadow: 0 0 7px #c0211e;
+      }
 
-.first-about {
-  width: 43%;
-  float: left;
-}
+          .first-about {
+            width: 43%;
+            float: left;
+          }
 
-.second-about {
-  width: 43%;
-  float: right;
-}
+          .second-about {
+            width: 43%;
+            float: right;
+          }
 
-.first-about,
-.second-about {
-  width: 400px;
-  margin: 0 3%;
-  text-align: justify;
-}
+          .first-about,
+          .second-about {
+            width: 400px;
+            margin: 0 3%;
+            text-align: justify;
+          }
 
-.first-about img,
-.second-about img {
-  opacity: 0.8;
-  width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 50px 20px rgba(0,0,0,1);
-}
+          .first-about img,
+          .second-about img {
+            opacity: 0.8;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 50px 20px rgba(0,0,0,1);
+          }
 
-.third-about {
-  text-align: justify;
-  display: block;
-  width: 300px;
-  margin: auto;
-}
+          .third-about {
+            text-align: justify;
+            display: block;
+            width: 300px;
+            margin: auto;
+          }
 
-.first-about p,
-.second-about p,
-.third-about p {
-  border-top: solid 2px #c0211e;
-  padding-top: 5px;
-  margin-top: 3px;
-}
+          .first-about p,
+          .second-about p,
+          .third-about p {
+            border-top: solid 2px #c0211e;
+            padding-top: 5px;
+            margin-top: 3px;
+          }
 
-.first-about h3,
-.second-about h3,
-.third-about h3 {
-  text-align: center;
-  margin-bottom: 0;
-}
+          .first-about h3,
+          .second-about h3,
+          .third-about h3 {
+            text-align: center;
+            margin-bottom: 0;
+          }
 
-.second {
-  margin: 50px auto;
-  transition: all 0.5s;
-  transition-delay: 250ms;
-}
+      .second {
+        margin: 50px auto;
+        transition: all 0.5s;
+        transition-delay: 250ms;
+      }
 
-.second:hover {
-  transform: translateY(25px) scale(1.05);
-  transition: all 1s;
-  opacity: 1;
-}
+      .second:hover {
+        transform: translateY(25px) scale(1.05);
+        transition: all 1s;
+        opacity: 1;
+      }
 
 .slideshow {
   min-width: 1300px;
@@ -295,38 +294,38 @@ a:visited {
   box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.3);
 }
 
-.header-gallery {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto 0;
-  border-top: solid 7px #c0211e;
-  border-radius: 50px 10px 0 0;
-}
-.header-gallery h2 {
-  width: 85%;
-  transition: all 1s;
-  transition-delay: .25s;
-  margin: 10px auto 20px;
-  border-bottom: solid 2px #c0211e;
-}
+      .header-gallery {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 0;
+        border-top: solid 7px #c0211e;
+        border-radius: 50px 10px 0 0;
+      }
+      .header-gallery h2 {
+        width: 85%;
+        transition: all 1s;
+        transition-delay: .25s;
+        margin: 10px auto 20px;
+        border-bottom: solid 2px #c0211e;
+      }
 
-.header-gallery h2:hover {
-  transition: all 1s;
-  transform: scale(1.05);
-  text-shadow: 0 0 7px #c0211e;
-}
+      .header-gallery h2:hover {
+        transition: all 1s;
+        transform: scale(1.05);
+        text-shadow: 0 0 7px #c0211e;
+      }
 
-.third {
-  margin: 25px auto;
-  transition: all 0.5s;
-  transition-delay: 250ms;
-}
+      .third {
+        margin: 25px auto;
+        transition: all 0.5s;
+        transition-delay: 250ms;
+      }
 
-.third:hover {
-  transform: translateY(25px);
-  transition: all 0.5s;
-  opacity: 1;
-}
+      .third:hover {
+        transform: translateY(25px);
+        transition: all 0.5s;
+        opacity: 1;
+      }
 
 .roles-container {
   width: 75%;
