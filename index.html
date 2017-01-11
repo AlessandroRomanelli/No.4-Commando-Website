@@ -17,17 +17,17 @@
           <li><a class="smoothScroll" href="#top">Home</a></li>
           <li><a class="smoothScroll" href=#about>About</a></li>
           <li><a class="smoothScroll" href="#gallery">Gallery</a></li>
-          <li><a class="smoothScroll" href="#">Equipment</a></li>
+          <li><a class="smoothScroll" href="#roles">Roles</a></li>
+          <li><a class="smoothScroll" href="#equipment">Weapons</a></li>
+          <li><a class="smoothScroll" href="#">Mods</a></li>
           <li><a class="smoothScroll" href="#">Join Us</a></li>
         </ul>
       </div>
     </header>
     <div class="main-title">
         <div class="title-text">
-          <a href="#">
           <h1>No.4 Commando</h1>
           <span>ArmA3 WW2 Relaxed Milsim Unit</span>
-          </a>
         </div>
         <a class="smoothScroll" href="#about"><img class="arrow first" src="img/arrow.svg" alt="arrow" /></a>
     </div>
@@ -61,16 +61,16 @@
           see the enemy directly through the iron sight of our bolt-action rifles, rather than through
           some kind of high-power magnfication lens attached to an automatic rifle.
           We face Death from up close on the battlefield and yet its threat and menace finds and shall
-          find us unafraid. Doesn't matter how dirty, how dangerous the business, we do it well.
+          find us unafraid. Doesn't matter how dirty, how dangerous the business, we do it and we do it well.
           </p>
           <a class="smoothScroll" href="#gallery"><img class="arrow second" src="img/arrow.svg" alt="arrow" /></a>
         </div>
       </div>
-      <div class="slideshow">
+      <div id="gallery" class="slideshow">
         <div class="header-gallery">
           <h2>Gallery</h2>
         </div>
-        <div id="gallery" class="slideshow-container">
+        <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="numbertext">1 / 6</div>
             <img src="img/gallery-1.jpg" style="width:100%">
@@ -120,10 +120,79 @@
           <span class="dot" onclick="currentSlide(5)"></span>
           <span class="dot" onclick="currentSlide(6)"></span>
         </div>
+        <a class="smoothScroll" href="#equipment"><img class="arrow third" src="img/arrow.svg" alt="arrow" /></a>
+      </div>
+      <div id="equipment" class="equipment-background">
+        <h2>Weapons</h2>
+        <div class="weapons top-element">
+          <div class="image-container lee-enfield">
+          </div>
+          <div class="description">
+            <h3><a href="https://en.wikipedia.org/wiki/Lee%E2%80%93Enfield" target="_blank">Lee-Enfield Mk.I</a></h3>
+            <p>The Mk.I Lee Enfield is the standard issued rifle that every soldier is trained with in the British Army.
+            It packs .303 cartridges which can knock out unconscious (if not kill) the enemy with just one accurate shot.
+            It was first introduced in 1895 and retired in 1957, which says a lot about how good and versatile this rifle was.
+            If you find yourself against a highly trained soldier carrying the Enfield, you are about to have a bad day. However
+            it doesn't lack some disadvantages: the light weight makes for a great kickback for every shot you take. Moreover it
+            only fits ten rounds at a time and it's bolt action, which make it a not so reliable weapon for close quarters combat.
+            It has a good effective firing range.</p>
+          </div>
+        </div>
+        <div class="weapons">
+          <div class="image-container sten">
+          </div>
+          <div class="description">
+            <h3><a href="https://en.wikipedia.org/wiki/Sten" target="_blank">Sten Gun</a></h3>
+            <p>The Sten Gun is the British solution to the lack of fire rate of the Lee Enfield, it chambers 9mm Parabellum
+            rounds and it's capable of gunning down an entire squad at close range if its 32 rounds magazine is emptied carefully.
+            The high fire rate comes at a price and that is the lack of range, limited to about 100m and stopping power: it will take
+            several shots to knock-out or kill the opponent. A variant of the Sten with a suppressor is also available. Anti-Tank riflemen
+            and Sappers are usually issued with this rifle since they are the most likely to fight the enemy at close range.</p>
+          </div>
+        </div>
+        <div class="weapons">
+          <div class="image-container bren">
+          </div>
+          <div class="description">
+            <h3><a href="https://en.wikipedia.org/wiki/Bren_light_machine_gun" target="_blank">Bren Gun (LMG)</a></h3>
+            <p>The Bren Light Machine Gun is one of the first of its kind to make it's appearance between the allies: capable of
+            firing up to 500 .303 rounds per minute, its power is devastating and it is feared throughout the German lines. It
+            normally fits 30 rounds magazines that get emptied quite fast. It's an incredible gun to inflict some suppression fire,
+            useful to provide cover for your allies that need to move. The major downsides are weight related: the weapon itself is kind
+            of heavy but most of the weight comes from the huge amount of magazines that the autorifleman has to carry, therefore it's almost
+            always helped out by an autorifleman assistant, or ammobearer.</p>
+          </div>
+        </div>
+        <div class="weapons">
+          <div class="image-container bazooka">
+          </div>
+          <div class="description">
+            <h3><a href="https://en.wikipedia.org/wiki/Bazooka" target="_blank">M1 Rocket Launcher (Bazooka)</a></h3>
+            <p>There is nothing more fearful that a <a href="https://en.wikipedia.org/wiki/Panzer_III">Panzerkampfwagen III</a> coming towards you with the only intent to wipe you and your whole section out.
+            That's when the M1 Bazooka comes into play. A trained anti-tank rifleman can take down an incautious tank with a single aimed shot, making it the perfect tool for ambushes and the defense from armored
+            assaults. Its rockets are faster than any other rocket-launcher available, making it the most accurate and giving it an effective shooting range of 300m. Because the M1 Bazooka is so heavy and many rockets
+            might be required during a sortie, the AT rifleman is usually teamed with an ammobearer that can carry rockets for him.</p>
+          </div>
+        </div>
+        <div class="weapons">
+          <div class="image-container explosives">
+          </div>
+          <div class="description">
+            <h3><a href="https://en.wikipedia.org/wiki/List_of_explosives_used_during_World_War_II" target="_blank">Explosives</a></h3>
+            <p>When bullets and rockets simply aren't enough, there come the Sappers with their charges, ready to blow up anything that crosses
+            Commando's path! The explosive used by the Commandos are mostly TNT based and come in different sizes: 250g, 1kg, 2kg. Depending
+            on the target, the right charge is used and through the use of a detonator the object is blown up from a short but safe distance.
+            It's an incredibly effective mean of initiating an ambush since anti-tank and anti-personnel mines fall into this category. Sappers
+            can be highly versatile by carrying different kind of charges. The charges are usually spreaded among the group to avoid the Sapper being
+            too heavy and can be placed down by anyone but the Sapper is the only one that can trigger them.
+            </thead></p>
+          </div>
+        </div>
+        <a class="smoothScroll" href="#mods"><img class="arrow forth" src="img/arrow.svg" alt="arrow" /></a>
       </div>
     <footer class="main-footer">
-      <p>Copyright 2016, <a class="smoothScroll" href="https://github.com/AlessandroRomanelli/" target="_blank">Alessandro Romanelli</a>.</p>
-      <a href="#top">Back to top &raquo;</a>
+      <p>Copyright 2016, <a href="https://github.com/AlessandroRomanelli/" target="_blank">Alessandro Romanelli</a>.</p>
+      <a class="smoothScroll" href="#top">Back to top &raquo;</a>
     </footer>
     <script src="scripts/slideshow.js"></script>
   </body>
