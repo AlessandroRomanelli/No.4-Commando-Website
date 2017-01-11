@@ -44,6 +44,7 @@ li {
 
 .main-header a:link {
   text-decoration: none;
+  opacity: .75;
   color: #fff;
   transition: all 1s;
 }
@@ -54,6 +55,7 @@ li {
 
 .main-header a:hover {
   color: #c0211e;
+  opacity: 1;
   transition: all .5s;
 }
 
@@ -94,21 +96,24 @@ a:visited {
   display: inline-block;
   width: 100%;
   background-color: #111;
-  min-width: 1100px;
+  min-width: 1000px;
 }
 
 .topleft {
   box-sizing: border-box;
-  height: 56px;
-  padding: 15px 10px;
+  width: 20%;
+  margin: 16px 0 16px 2%;
   text-transform: uppercase;
   font-weight: bold;
   float: left;
-  margin-left: 50px;
+}
+
+.topleft span {
+  display: inline;
 }
 
 .topright {
-  margin-right: 50px;
+  margin-right: 2%;
   text-transform: uppercase;
   font-weight: bold;
   float: right;
@@ -117,6 +122,10 @@ a:visited {
 .topright li {
   padding: 0 10px;
   border-right: solid 2px white;
+}
+
+.topright span {
+  padding-left: 10px;
 }
 
 .main-title {
@@ -319,10 +328,39 @@ a:visited {
   opacity: 1;
 }
 
+.roles-container {
+  width: 75%;
+  margin: 150px auto;
+  border-radius: 50px 10px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.3);
+  border-top: solid 7px #c0211e;
+}
+
+.roles-container h2 {
+  width: 85%;
+  text-align: center;
+  transition: all 1s;
+  transition-delay: .25s;
+  margin: 10px auto 20px;
+  border-bottom: solid 2px #c0211e;
+}
+
+.roles-container h2:hover {
+  transition: all 1s;
+  transform: scale(1.05);
+  text-shadow: 0 0 7px #c0211e;
+}
+
+.roles-box {
+  width: 85%;
+  margin: auto;
+}
+
 .equipment-background {
   width: 75%;
   min-width: 1300px;
-  height: 1650px;
+  height: 1700px;
   margin: 100px auto;
   border-radius: 50px 10px;
   border-top: solid 10px #c0211e;
@@ -407,7 +445,7 @@ a:visited {
 
 .weapons {
   width: 85%;
-  height: 275px;
+  height: 290px;
   padding: 20px 10px;
   margin: 0 auto;
   border-radius: 5px;
@@ -419,7 +457,6 @@ a:visited {
   margin: 0 5% 0 0;
   float: right;
   text-align: justify;
-  background
 }
 
 .description h3 {
