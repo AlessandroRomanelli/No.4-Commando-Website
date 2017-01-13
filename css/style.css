@@ -46,12 +46,12 @@ h3 {
   text-transform: uppercase;
   font-weight: normal;
   text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
-  transition: all 1s;
+  transition: all .5s;
   transition-delay: .25s;
 }
 
 h3:hover {
-  transition: all 1.5s;
+  transition: all 1s;
   transform: scaleX(1.025);
   text-shadow: 0 0 3px #c0211e;
 }
@@ -62,6 +62,7 @@ p {
 }
 
 li {
+  list-style: none;
   padding-right: 10px;
   display: inline;
 }
@@ -96,24 +97,9 @@ a:visited {
   color: #c0211e;
 }
 
-#about a:link {
-  text-decoration: none;
-  color: #c0211e;
-}
-
-#about a:visited {
-  color: #c0211e;
-}
-
-#about a:hover,
-.weapons a:hover {
+a:hover {
   text-shadow: 0 0 5px rgba(255,255,255,.5);
 }
-
-.weapons a:link {}
-
-
-
 
 /* ---------------------------------------------- */
 
@@ -132,7 +118,6 @@ a:visited {
         text-transform: uppercase;
         font-weight: bold;
         float: left;
-        opacity: .75;
         transition-delay: .5s;
         transition: all 1s ease;
       }
@@ -140,6 +125,7 @@ a:visited {
       .topleft span {
         vertical-align: middle;
         padding-left: 10px;
+        opacity: .75;
       }
 
       .topleft:hover {
@@ -165,7 +151,7 @@ a:visited {
         fill: #c0211e;
         transition: all 1s ease;
         opacity: 1;
-        transform: scale(1)
+        transform: scale(.95)
       }
 
       .topright {
@@ -176,12 +162,9 @@ a:visited {
       }
 
       .topright li {
-        padding: 0 10px;
+        margin-left: 10px;
+        padding-right: 13px;
         border-right: solid 2px white;
-      }
-
-      .topright span {
-        padding-left: 10px;
       }
 
 .main-title {
@@ -470,26 +453,63 @@ a:visited {
         margin: 0;
       }
 
-      .forth {
-        margin: 50px auto 0;
-        transition: all 0.5s;
-        transition-delay: 250ms;
-      }
-
-      .forth:hover {
-        transform: translateY(25px);
-        transition: all 0.5s;
-        opacity: 1;
-      }
-
 #mods {
-  height: 1000px;
+  height: 1100px;
+  text-align: center;
 }
 
-      #mods h2 {
-        width: 85%;
-        margin: 10px auto;
-        text-align: center;
-        transition: all 1s;
-        transition-delay: .25s;
-      }
+.overhead h3 {
+    font-size: 1.75em;
+    margin-bottom: 0;
+    line-height: .9em;
+}
+
+.overhead p {
+    color: rgba(192,33,30,.2);
+    height: 15px;
+    margin: 0;
+    font-size: .7em;
+}
+
+.modlist {
+  width: 70%;
+  opacity: .1;
+  padding: 25px 0;
+  margin: 5px auto;
+  transition: 1s;
+  border-bottom: solid 2px rgba(192,33,30,.25);
+}
+
+.no4 {
+  border-radius: 10px;
+}
+
+.no4 h3 {
+  border-bottom: solid 2px rgba(192,33,30,.25);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.modlist:hover {
+  opacity: .8;
+  transition: .5s;
+}
+
+.modlist li {
+  margin: 0 5px 0 0;
+  list-style: none;
+  border-right: solid 2px white;
+}
+
+.modlist p {
+  margin: 0;
+  padding: 25px 0 5px;
+}
+
+.modlist img {
+  width: 150px;
+}
+
+.last-modlist {
+  border-bottom: none;
+}
