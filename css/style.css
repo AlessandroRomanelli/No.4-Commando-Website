@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 2.25em;
   text-transform: uppercase;
   font-weight: normal;
@@ -84,6 +84,7 @@ li {
   color: #c0211e;
   opacity: 1;
   transition: all .5s;
+  text-shadow: none;
 }
 
 a:link {
@@ -94,7 +95,7 @@ a:link {
 }
 
 a:visited {
-  color: #c0211e;
+  color: #861715;
 }
 
 a:hover {
@@ -243,7 +244,7 @@ a:hover {
         background: url("../img/britain-flag.jpg");
         background-size: cover;
         border-radius: 50px 10px;
-        opacity: 0.15;
+        opacity: .1;
         top: 0;
         left: 0;
         bottom: 0;
@@ -458,58 +459,117 @@ a:hover {
   text-align: center;
 }
 
-.overhead h3 {
-    font-size: 1.75em;
-    margin-bottom: 0;
-    line-height: .9em;
+        .overhead span {
+          opacity: .3;
+          font-size: 0.75em;
+        }
+
+        .overhead h3 {
+            font-size: 1.75em;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: .9em;
+        }
+
+        .overhead p {
+            color: rgba(192,33,30,.6);
+            height: 15px;
+            margin: 0;
+            font-size: .7em;
+        }
+
+        .modlist {
+          width: 70%;
+          opacity: .1;
+          padding: 25px 0;
+          margin: 5px auto;
+          transition: 1s;
+          border-bottom: solid 2px rgba(192,33,30,.25);
+        }
+
+        .no4 {
+          border-radius: 10px;
+        }
+
+        .no4 h3 {
+          border-bottom: solid 2px rgba(192,33,30,.25);
+          font-size: 1.5em;
+          margin: 0;
+        }
+
+        .modlist:hover {
+          opacity: .8;
+          transition: .5s;
+        }
+
+        .modlist li {
+          margin: 0 5px 0 0;
+          border-right: solid 2px white;
+        }
+
+        .modlist p {
+          margin: 0;
+          padding: 25px 0 5px;
+        }
+
+        .modlist img {
+          width: 150px;
+        }
+
+        .last-modlist {
+          border-bottom: none;
+        }
+
+
+#join {
+  height: 570px;
 }
 
-.overhead p {
-    color: rgba(192,33,30,.2);
-    height: 15px;
-    margin: 0;
-    font-size: .7em;
-}
+        #join h2:hover {
+          transform: none;
+        }
 
-.modlist {
-  width: 70%;
-  opacity: .1;
-  padding: 25px 0;
-  margin: 5px auto;
-  transition: 1s;
-  border-bottom: solid 2px rgba(192,33,30,.25);
-}
+        .uncle-sam {
+          width: 600px;
+          height: 600px;
+          background-image: url("../img/we-want-you.svg");
+          background-size: cover;
+          float: right;
+          position: relative;
+          top: -17%;
+          right: 0;
+          margin: auto;
+          opacity: .1;
+        }
 
-.no4 {
-  border-radius: 10px;
-}
+        .join-us {
+          margin-left: 5%;
+          width: 40%;
+          float: left;
+        }
 
-.no4 h3 {
-  border-bottom: solid 2px rgba(192,33,30,.25);
-  font-size: 1.5em;
-  margin: 0;
-}
+        .join-us a:link {
+          color: white;
+          cursor: pointer;
+        }
 
-.modlist:hover {
-  opacity: .8;
-  transition: .5s;
-}
+        .join-us h3 {
+          cursor: pointer;
+          color: white;
+          font-size: 1.5em;
+          margin: 0;
+          padding: 10px;
+          transition: .5s;
+          transition-delay: .1s
+        }
 
-.modlist li {
-  margin: 0 5px 0 0;
-  list-style: none;
-  border-right: solid 2px white;
-}
+        .join-us h3:hover {
+          transform: translateX(150px) scale(1.5);
+        }
 
-.modlist p {
-  margin: 0;
-  padding: 25px 0 5px;
-}
-
-.modlist img {
-  width: 150px;
-}
-
-.last-modlist {
-  border-bottom: none;
-}
+        .people {
+          border-radius: 25px;
+          margin: 50px 0;
+          border-left: 2px solid rgba(192,33,30,.5);
+          padding: 5px 0;
+        }
