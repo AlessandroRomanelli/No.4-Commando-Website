@@ -55,7 +55,22 @@ h3:hover {
   transform: scaleX(1.025);
   text-shadow: 0 0 3px #c0211e;
 }
+
+h4 {
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
+  transition: all .5s;
+  transition-delay: .25s;
 }
+
+h4:hover {
+  transition: all 1s;
+  transform: scaleX(1.025);
+  text-shadow: 0 0 3px #c0211e;
+}
+
 
 p {
 
@@ -553,7 +568,7 @@ a:hover {
           cursor: pointer;
         }
 
-        .join-us h3 {
+        .join-us h4 {
           cursor: pointer;
           color: white;
           font-size: 1.5em;
@@ -563,7 +578,7 @@ a:hover {
           transition-delay: .1s
         }
 
-        .join-us h3:hover {
+        .join-us h4:hover {
           transform: translateX(150px) scale(1.5);
         }
 
