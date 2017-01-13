@@ -8,16 +8,17 @@
     <script src="scripts/smoothScroll.js"></script>
   </head>
   <body>
-    <header id="top" class="main-header">
-      <span class="topleft">
-        <a href="http://steamcommunity.com/groups/No4Commando" target="_blank">No.4 Commando</a>
-      </span>
+    <header id="top">
+      <div class="topleft">
+        <a href="http://steamcommunity.com/groups/No4Commando" target="_blank"><img src="img/steam.svg" alt="steam logo"></a>
+        <span>No.4 Commando</span>
+      </div>
       <div class="topright">
         <ul>
           <li><a class="smoothScroll" href="#top">Home</a></li>
           <li><a class="smoothScroll" href=#about>About</a></li>
           <li><a class="smoothScroll" href="#gallery">Gallery</a></li>
-          <li><a class="smoothScroll" href="#roles">Roles</a></li>
+          <!--<li><a class="smoothScroll" href="#roles">Roles</a></li>-->
           <li><a class="smoothScroll" href="#equipment">Weapons</a></li>
           <li><a class="smoothScroll" href="#">Modpack</a></li>
           <span><a class="smoothScroll" href="#">Join Us</a></span>
@@ -33,8 +34,7 @@
     </div>
 
 
-    <div id="about" class="about-background">
-      <div class="about-us">
+      <div id="about" class="container">
           <h2> About Us </h2>
         <div class="first-about">
           <img src="img/first-about.png" alt="explosion with soldiers">
@@ -70,7 +70,7 @@
       </div>
 
 
-      <div id="gallery" class="slideshow">
+      <div id="gallery" class="container">
         <div class="header-gallery">
           <h2>Gallery</h2>
         </div>
@@ -124,10 +124,10 @@
           <span class="dot" onclick="currentSlide(5)"></span>
           <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-        <a class="smoothScroll" href="#roles"><img class="arrow third" src="img/arrow.svg" alt="arrow" /></a>
+        <a class="smoothScroll" href="#equipment"><img class="arrow third" src="img/arrow.svg" alt="arrow" /></a>
       </div>
 
-
+<!-- Do not display this ========================================================
       <div id="roles" class="roles-container">
         <div class="roles-header">
           <h2>Roles</h2>
@@ -198,10 +198,11 @@
         </div>
       </div>
 
+-->
 
-      <div id="equipment" class="equipment-background">
+      <div id="equipment" class="container">
         <h2>Weapons</h2>
-        <div class="weapons top-element">
+        <div class="weapons">
           <div class="image-container lee-enfield">
           </div>
           <div class="description">
@@ -219,7 +220,7 @@
           <div class="image-container sten">
           </div>
           <div class="description">
-            <h3><a href="https://en.wikipedia.org/wiki/Sten" target="_blank">Sten Gun</a></h3>
+            <h3><a href="https://en.wikipedia.org/wiki/Sten" target="_blank">Sten Gun (SMG)</a></h3>
             <p>The Sten Gun is the British solution to the lack of fire rate of the Lee Enfield, it chambers 9mm Parabellum
             rounds and it's capable of gunning down an entire squad at close range if its 32 rounds magazine is emptied carefully.
             The high fire rate comes at a price and that is the lack of range, limited to about 100m and stopping power: it will take
@@ -245,7 +246,7 @@
           </div>
           <div class="description">
             <h3><a href="https://en.wikipedia.org/wiki/Bazooka" target="_blank">M1 Rocket Launcher (Bazooka)</a></h3>
-            <p>There is nothing more fearful that a <a href="https://en.wikipedia.org/wiki/Panzer_III">Panzerkampfwagen III</a> coming towards you with the only intent to wipe you and your whole section out.
+            <p>There is nothing more fearful that a <a href="https://en.wikipedia.org/wiki/Panzer_III" target="_blank">Panzerkampfwagen III</a> coming towards you with the only intent to wipe you and your whole section out.
             That's when the M1 Bazooka comes into play. A trained anti-tank rifleman can take down an incautious tank with a single aimed shot, making it the perfect tool for ambushes and the defense from armored
             assaults. Its rockets are faster than any other rocket-launcher available, making it the most accurate and giving it an effective shooting range of 300m. Because the M1 Bazooka is so heavy and many rockets
             might be required during a sortie, the AT rifleman is usually teamed with an ammobearer that can carry rockets for him.</p>
@@ -266,6 +267,9 @@
           </div>
         </div>
         <a class="smoothScroll" href="#mods"><img class="arrow forth" src="img/arrow.svg" alt="arrow" /></a>
+      </div>
+      <div id="mods" class="container">
+        <h2>Mods in use</h2>
       </div>
     <footer class="main-footer">
       <p>Copyright 2016, <a href="https://github.com/AlessandroRomanelli/" target="_blank">Alessandro Romanelli</a>.</p>

@@ -1,7 +1,9 @@
-/* Base Styles ------------------------------------------------------*/
+/* Universal Rule ------------------------------------------------------*/
 * {
   box-sizing: border-box;
 }
+
+/* General Styles ------------------------------------------------------*/
 
 body {
   background-color: #111;
@@ -23,6 +25,18 @@ h2 {
   text-transform: uppercase;
   font-weight: normal;
   text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
+  width: 90%;
+  transition: all 1s;
+  transition-delay: .25s;
+  margin: 10px auto 20px;
+  border-bottom: solid 2px #c0211e;
+  text-align: center;
+}
+
+h2:hover {
+  transition: all 1s;
+  transform: scale(1.025);
+  text-shadow: 0 0 7px #c0211e;
 }
 
 h3 {
@@ -42,18 +56,18 @@ li {
 
 /* Pseudo-Classes ---------------------------------------------- */
 
-.main-header a:link {
+#top a:link {
   text-decoration: none;
   opacity: .75;
   color: #fff;
   transition: all 1s;
 }
 
-.main-header a:visited {
+#top a:visited {
   color: #fff;
 }
 
-.main-header a:hover {
+#top a:hover {
   color: #c0211e;
   opacity: 1;
   transition: all .5s;
@@ -70,16 +84,16 @@ a:visited {
   color: #c0211e;
 }
 
-.about-us a:link {
+#about a:link {
   text-decoration: none;
   color: #c0211e;
 }
 
-.about-us a:visited {
+#about a:visited {
   color: #c0211e;
 }
 
-.about-us a:hover,
+#about a:hover,
 .weapons a:hover {
   text-shadow: 0 0 5px rgba(255,255,255,.5);
 }
@@ -92,7 +106,7 @@ a:visited {
 /* ---------------------------------------------- */
 
 
-.main-header {
+#top {
   display: inline-block;
   width: 100%;
   background-color: #111;
@@ -101,15 +115,44 @@ a:visited {
 
       .topleft {
         box-sizing: border-box;
-        width: 20%;
-        margin: 16px 0 16px 2%;
+        width: 200px;
+        margin: 0 0 0 2%;
         text-transform: uppercase;
         font-weight: bold;
         float: left;
+        opacity: .75;
+        transition-delay: .5s;
+        transition: all 1s ease;
       }
 
       .topleft span {
-        display: inline;
+        vertical-align: middle;
+        padding-left: 10px;
+      }
+
+      .topleft:hover {
+        color: #c0211e;
+        opacity: 1;
+        transition: all 1s ease;
+      }
+
+      .topleft img {
+        opacity: .2;
+        fill: white;
+        vertical-align: middle;
+        height: 40px;
+        width: 40px;
+        margin: 8px 0;
+        transform: scale(.9);
+        transition: all 1s ease;
+        transition-delay: .5s;
+      }
+
+      .topleft img:hover {
+        fill: #c0211e;
+        transition: all 1s ease;
+        opacity: 1;
+        transform: scale(1)
       }
 
       .topright {
@@ -136,7 +179,6 @@ a:visited {
   text-align: center;
   margin-top: -7px;
   padding: 10% 10% 20%;
-  min-width: 1100px;
   text-shadow: 0 2px 15px rgba(0,0,0,.7),
                0 2px 2px rgba(0,0,0,.5);
 }
@@ -182,47 +224,36 @@ a:visited {
         opacity: 1;
       }
 
-.about-us {
-  background-color: rgba(0,0,0,0.3);
+.container {
+  width: 75%;
+  background-color: rgba(0,0,0,0.5);
   border-radius: 50px 10px;
   border-top: solid 10px #c0211e;
-  width: 75%;
-  height: 675px;
-  min-width: 1300px;
   padding: 5px 50px 50px;
-  margin: 100px auto;
+  margin: 150px auto;
   display: block;
-  text-align: center;
-  position: relative;
   box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
-      .about-us::after {
+#about {
+  margin-top: 50px;
+  height: 675px;
+  text-align: center;
+  position: relative;
+}
+
+      #about::after {
         content: "";
         background: url("../img/britain-flag.jpg");
         background-size: cover;
         border-radius: 50px 10px;
-        opacity: 0.05;
+        opacity: 0.15;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;;
         z-index: -1;
-      }
-
-      .about-us h2 {
-        width: 90%;
-        margin: 10px auto 20px;
-        transition: all 1s;
-        transition-delay: .25s;
-        border-bottom: solid 2px #c0211e;
-      }
-
-      .about-us h2:hover {
-        transition: all 1s;
-        transform: scale(1.05);
-        text-shadow: 0 0 7px #c0211e;
       }
 
           .first-about {
@@ -284,35 +315,12 @@ a:visited {
         opacity: 1;
       }
 
-.slideshow {
-  min-width: 1300px;
-  width: 75%;
-  padding: 0 0 25px;
-  margin: auto;
-  border-radius: 50px 10px;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.3);
-}
 
-      .header-gallery {
+.header-gallery {
         text-align: center;
         width: 100%;
         margin: 0 auto 0;
-        border-top: solid 7px #c0211e;
         border-radius: 50px 10px 0 0;
-      }
-      .header-gallery h2 {
-        width: 85%;
-        transition: all 1s;
-        transition-delay: .25s;
-        margin: 10px auto 20px;
-        border-bottom: solid 2px #c0211e;
-      }
-
-      .header-gallery h2:hover {
-        transition: all 1s;
-        transform: scale(1.05);
-        text-shadow: 0 0 7px #c0211e;
       }
 
       .third {
@@ -326,7 +334,7 @@ a:visited {
         transition: all 0.5s;
         opacity: 1;
       }
-
+/*
 .roles-container {
   width: 75%;
   margin: 150px auto;
@@ -377,112 +385,72 @@ a:visited {
           float: left;
         }
 
-.equipment-background {
-  width: 75%;
-  min-width: 1300px;
-  height: 1700px;
-  margin: 100px auto;
-  border-radius: 50px 10px;
-  border-top: solid 10px #c0211e;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.3);
+        .icon-container {
+          width: 100px;
+          height: 100px;
+          background-color: white;
+        }*/
+
+#equipment {
+  height: 1500px;
 }
 
-      .equipment-background div:nth-child(odd) {
+      #equipment div:nth-child(odd) {
         background-color: rgba(0, 0, 0, 0.3)
       }
 
-      .equipment-background h2 {
-        width: 85%;
-        margin: 10px auto;
-        text-align: center;
-        transition: all 1s;
-        transition-delay: .25s;
-      }
-
-      .equipment-background h2:hover {
-        transition: all 1s;
-        transform: scale(1.05);
-        text-shadow: 0 0 7px #c0211e;
-      }
-
       .image-container {
-        display: block;
-        position: relative;
-          top: 15px;
+        transform: scale(.85);
+        display: table-cell;
+        vertical-align: middle;
         border-radius: 10px;
         border-right: 4px solid rgba(192,33,30,.5);
+
       }
 
-
       .lee-enfield {
-        width: 355px;
-        height: 200px;
-        float: left;
-        background: linear-gradient(transparent 40%, #090909 95%),
-                    linear-gradient(#090909 5%, transparent 40%),
-                    url('../img/lee-enfield.jpg') no-repeat center;
+        background: url('../img/lee-enfield.jpg') no-repeat center;
         background-size: cover;
       }
 
       .sten {
-        width: 355px;
-        height: 200px;
-        float: left;
-        background: linear-gradient(transparent 40%, #060606 95%),
-                    linear-gradient(#060606 5%, transparent 40%),
-                    url('../img/stengun.jpg') no-repeat center;
+        background: url('../img/stengun.jpg') no-repeat center;
         background-size: cover;
       }
 
       .bren {
-        width: 355px;
-        height: 200px;
-        float: left;
-        background: linear-gradient(transparent 40%, #090909 95%),
-                    linear-gradient(#090909 5%, transparent 40%),
-                    url('../img/bren.jpg') no-repeat center;
+        background: url('../img/bren.jpg') no-repeat center;
         background-size: cover;
       }
 
       .bazooka {
-        width: 355px;
-        height: 200px;
-        float: left;
-        background: linear-gradient(transparent 40%, #060606 95%),
-                    linear-gradient(#060606 5%, transparent 40%),
-                    url('../img/bazooka.jpg') no-repeat center;
+        background: url('../img/bazooka.jpg') no-repeat center;
         background-size: cover;
       }
 
       .explosives {
-        width: 355px;
-        height: 200px;
-        float: left;
-        background: linear-gradient(transparent 90%, #090909 100%),
-                    linear-gradient(#090909 0%, transparent 10%),
-                    url('../img/explosives.jpg') no-repeat center;
+        background: url('../img/explosives.jpg') no-repeat center;
         background-size: cover;
       }
 
-      .top-element {
-          border-top: solid 2px #c0211e;
-      }
-
       .weapons {
-        width: 85%;
-        height: 290px;
-        padding: 20px 10px;
+        width: 95%;
+        height: 225px;
+        padding: 5px 20px;
         margin: 0 auto;
         border-radius: 5px;
         border-bottom: solid 2px rgba(192,33,30,.25);
+        vertical-align: middle;
+        display: table;
       }
 
       .description {
-        width: 60%;
-        margin: 0 5% 0 0;
-        float: right;
+        width: 65%;
+        padding-left: 10px;
+        margin: 0;
         text-align: justify;
+        vertical-align: middle;
+        display: table-cell;
       }
 
       .description h3 {
@@ -490,7 +458,7 @@ a:visited {
       }
 
       .forth {
-        margin: 25px auto;
+        margin: 50px auto 0;
         transition: all 0.5s;
         transition-delay: 250ms;
       }
@@ -499,4 +467,16 @@ a:visited {
         transform: translateY(25px);
         transition: all 0.5s;
         opacity: 1;
+      }
+
+#mods {
+  height: 1000px;
+}
+
+      #mods h2 {
+        width: 85%;
+        margin: 10px auto;
+        text-align: center;
+        transition: all 1s;
+        transition-delay: .25s;
       }
