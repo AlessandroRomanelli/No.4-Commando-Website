@@ -1,0 +1,37 @@
+#floater {
+  width: 50px;
+  height: 50px;
+  background-color: #c0211e;
+  position: fixed;
+  border-radius: 50%;
+  bottom: -50px;
+  right: -25px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: .3;
+  cursor: pointer;
+  transition: .5s all ease;
+}
+
+#floater.show {
+  bottom: 10px;
+  right: 10px;
+}
+
+#floater:after {
+  content: "";
+  background: url("../img/arrow.svg") no-repeat center;
+  background-size: cover;
+  font-size: 3rem;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  left: 50%;
+}
+
+  #floater:hover {
+  opacity: 1;
+}

@@ -1,0 +1,65 @@
+#mods {
+   height     : 1100px;
+   text-align : center;
+}
+
+.overhead span {
+   opacity   : .3;
+   font-size : 0.75em;
+}
+
+.overhead h3 {
+   margin-top    : 0;
+   margin-bottom : 0;
+   font-size     : 1.75em;
+   line-height   : .9em;
+}
+
+.overhead p {
+   height    : 15px;
+   margin    : 0;
+   color     : rgba(192,33,30,.6);
+   font-size : .7em;
+}
+
+.modlist {
+   width         : 70%;
+   margin        : 5px auto;
+   padding       : 25px 0;
+   opacity       : .35;
+   border-bottom : solid 2px rgba(192,33,30,.25);
+   transition    : 1s;
+}
+
+.no4 {
+   border-radius : 10px;
+}
+
+.no4 h3 {
+   margin        : 0;
+   border-bottom : solid 2px rgba(192,33,30,.25);
+   font-size     : 1.5em;
+}
+
+.modlist:hover {
+   opacity    : .8;
+   transition : .5s;
+}
+
+.modlist li {
+   margin       : 0 5px 0 0;
+   border-right : solid 2px white;
+}
+
+.modlist p {
+   margin  : 0;
+   padding : 25px 0 5px;
+}
+
+.modlist img {
+   width : 150px;
+}
+
+.last-modlist {
+   border-bottom : none;
+}

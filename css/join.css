@@ -1,0 +1,52 @@
+#join {
+   height : 570px;
+}
+
+#join h2:hover {
+   transform : none;
+}
+
+.uncle-sam {
+   position         : relative;
+   top              : -17%;
+   right            : 0;
+   width            : 600px;
+   height           : 600px;
+   float            : right;
+   margin           : auto;
+   opacity          : .3;
+   background-image : url("../img/we-want-you.svg");
+   background-size  : cover;
+}
+
+.join-us {
+   width       : 40%;
+   float       : left;
+   margin-left : 5%;
+}
+
+.join-us a:link {
+   color  : white;
+   cursor : pointer;
+}
+
+.join-us h4 {
+   margin           : 0;
+   padding          : 10px;
+   color            : white;
+   font-size        : 1.5em;
+   transition       : .5s;
+   transition-delay : .1s;
+   cursor           : pointer;
+}
+
+.join-us h4:hover {
+   transform : translateX(150px) scale(1.5);
+}
+
+.people {
+   margin        : 50px 0;
+   padding       : 5px 0;
+   border-left   : 2px solid rgba(192,33,30,.5);
+   border-radius : 25px;
+}

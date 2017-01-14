@@ -1,0 +1,64 @@
+#equipment {
+   height : 1600px;
+}
+
+#equipment div:nth-child(odd) {
+   background-color : rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+   display        : table-cell;
+   border-right   : 4px solid rgba(192,33,30,.5);
+   border-radius  : 10px;
+   vertical-align : middle;
+   transform      : scale(.85);
+}
+
+.lee-enfield {
+   background      : url('../img/lee-enfield.jpg') no-repeat center;
+   background-size : cover;
+}
+
+.sten {
+   background      : url('../img/stengun.jpg') no-repeat center;
+   background-size : cover;
+}
+
+.bren {
+   background      : url('../img/bren.jpg') no-repeat center;
+   background-size : cover;
+}
+
+.bazooka {
+   background      : url('../img/bazooka.jpg') no-repeat center;
+   background-size : cover;
+}
+
+.explosives {
+   background      : url('../img/explosives.jpg') no-repeat center;
+   background-size : cover;
+}
+
+.weapons {
+   display        : table;
+   width          : 95%;
+   height         : 225px;
+   margin         : 0 auto;
+   padding        : 15px 20px;
+   border-bottom  : solid 2px rgba(192,33,30,.25);
+   border-radius  : 5px;
+   vertical-align : middle;
+}
+
+.description {
+   display        : table-cell;
+   width          : 65%;
+   margin         : 0;
+   padding-left   : 10px;
+   text-align     : justify;
+   vertical-align : middle;
+}
+
+.description h3 {
+   margin : 0;
+}

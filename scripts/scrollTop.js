@@ -8,6 +8,5 @@ $(function() {
     } else {
       floater.removeClass(activeClass);
     }
-    console.log(window.scrollY);
   });
 });

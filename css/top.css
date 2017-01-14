@@ -1,0 +1,62 @@
+#top {
+   display          : inline-block;
+   width            : 100%;
+   min-width        : 1000px;
+   background-color : #111;
+}
+
+.topleft {
+   box-sizing       : border-box;
+   width            : 200px;
+   float            : left;
+   margin           : 0 0 0 2%;
+   text-transform   : uppercase;
+   font-weight      : bold;
+   transition       : all 1s ease;
+   transition-delay : .5s;
+}
+
+.topleft span {
+   padding-left   : 10px;
+   opacity        : .75;
+   vertical-align : middle;
+}
+
+.topleft:hover {
+   color      : #c0211e;
+   opacity    : 1;
+   transition : all 1s ease;
+   cursor     : default;
+}
+
+.topleft img {
+   width            : 40px;
+   height           : 40px;
+   margin           : 8px 0;
+   opacity          : .2;
+   fill             : white;
+   vertical-align   : middle;
+   transform        : scale(.9);
+   transition       : all 1s ease;
+   transition-delay : .5s;
+}
+
+.topleft img:hover {
+   opacity    : 1;
+   fill       : #c0211e;
+   transform  : scale(.95);
+   transition : all 1s ease;
+}
+
+.topright {
+   float          : right;
+   margin-right   : 2%;
+   text-transform : uppercase;
+   font-weight    : bold;
+}
+
+.topright li {
+   margin-left   : 10px;
+   padding-right : 13px;
+   border-right  : solid 2px white;
+}

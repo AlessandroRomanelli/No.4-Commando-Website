@@ -1,636 +1,129 @@
-/* Universal Rule ------------------------------------------------------*/
+/* Universal Rule ------------------------------------------------------ */
+
 * {
-  box-sizing: border-box;
+   box-sizing : border-box;
 }
 
-/* General Styles ------------------------------------------------------*/
+/* General Styles ------------------------------------------------------ */
 
 body {
-  background-color: #111;
-  color: #fff;
-  margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+   margin           : 0;
+   color            : #fff;
+   background-color : #111;
+   font             : 1em/1.5 "Helvetica Neue",
+                      Helvetica,
+                      Arial,
+                      sans-serif;
 }
 
 h1 {
-  font-size: 6em;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin: auto;
-  height: 120px;
+   height         : 120px;
+   margin         : auto;
+   text-transform : uppercase;
+   font-size      : 6em;
+   font-weight    : normal;
 }
 
 h2 {
-  letter-spacing: 1px;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
-  width: 90%;
-  transition: all 1s;
-  transition-delay: .25s;
-  margin: 10px auto 20px;
-  text-align: center;
-  cursor: default;
+   width            : 90%;
+   margin           : 10px auto 20px;
+   text-align       : center;
+   text-transform   : uppercase;
+   text-shadow      : 0 2px 3px rgba(176, 55, 55, 0.3);
+   font-size        : 2.5em;
+   font-weight      : normal;
+   letter-spacing   : 1px;
+   transition       : all 1s;
+   transition-delay : .25s;
+   cursor           : default;
 }
 
 h2:hover {
-  transition: all 1s;
-  transform: scaleX(1.05);
-  text-shadow: 0 0 7px #c0211e;
+   text-shadow : 0 0 7px #c0211e;
+   transform   : scaleX(1.05);
+   transition  : all 1s;
 }
 
 h3 {
-  cursor: default;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
-  transition: all .5s;
-  transition-delay: .25s;
+   text-transform   : uppercase;
+   text-shadow      : 0 2px 3px rgba(176, 55, 55, 0.3);
+   font-weight      : normal;
+   transition       : all .5s;
+   transition-delay : .25s;
+   cursor           : default;
 }
 
 h3:hover {
-  transition: all 1s;
-  transform: scaleX(1.025);
-  text-shadow: 0 0 3px #c0211e;
+   text-shadow : 0 0 3px #c0211e;
+   transform   : scaleX(1.025);
+   transition  : all 1s;
 }
 
 h4 {
-  cursor: default;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-shadow: 0  2px 3px rgba(176, 55, 55, 0.3);
-  transition: all .5s;
-  transition-delay: .25s;
+   text-transform   : uppercase;
+   text-shadow      : 0 2px 3px rgba(176, 55, 55, 0.3);
+   font-weight      : normal;
+   transition       : all .5s;
+   transition-delay : .25s;
+   cursor           : default;
 }
 
 h4:hover {
-  transition: all 1s;
-  transform: scaleX(1.025);
-  text-shadow: 0 0 3px #c0211e;
+   text-shadow : 0 0 3px #c0211e;
+   transform   : scaleX(1.025);
+   transition  : all 1s;
 }
 
-
-p {
-
-}
+p {}
 
 li {
-  list-style: none;
-  padding-right: 10px;
-  display: inline;
+   display       : inline;
+   padding-right : 10px;
+   list-style    : none;
 }
 
 /* Pseudo-Classes ---------------------------------------------- */
 
 #top a:link {
-  text-decoration: none;
-  opacity: .75;
-  color: #fff;
-  transition: all 1s;
+   color           : #fff;
+   opacity         : .75;
+   text-decoration : none;
+   transition      : all 1s;
 }
 
 #top a:visited {
-  color: #fff;
+   color : #fff;
 }
 
 #top a:hover {
-  color: #c0211e;
-  opacity: 1;
-  transition: all .5s;
-  text-shadow: none;
+   color       : #c0211e;
+   opacity     : 1;
+   text-shadow : none;
+   transition  : all .5s;
 }
 
 a:link {
-  text-decoration: none;
-  color: #c0211e;
-  cursor: pointer;
-  transition: all 1s;
+   color           : #c0211e;
+   text-decoration : none;
+   transition      : all 1s;
+   cursor          : pointer;
 }
 
 a:visited {
-  color: #c0211e;
+   color : #c0211e;
 }
 
 a:hover {
-  text-shadow: 0 0 5px rgba(255,255,255,.5);
+   text-shadow : 0 0 5px rgba(255,255,255,.5);
 }
-
-/* ---------------------------------------------- */
-
-
-#top {
-  display: inline-block;
-  width: 100%;
-  background-color: #111;
-  min-width: 1000px;
-}
-
-      .topleft {
-        box-sizing: border-box;
-        width: 200px;
-        margin: 0 0 0 2%;
-        text-transform: uppercase;
-        font-weight: bold;
-        float: left;
-        transition-delay: .5s;
-        transition: all 1s ease;
-      }
-
-      .topleft span {
-        vertical-align: middle;
-        padding-left: 10px;
-        opacity: .75;
-      }
-
-      .topleft:hover {
-        color: #c0211e;
-        opacity: 1;
-        transition: all 1s ease;
-        cursor: default;
-      }
-
-      .topleft img {
-        opacity: .2;
-        fill: white;
-        vertical-align: middle;
-        height: 40px;
-        width: 40px;
-        margin: 8px 0;
-        transform: scale(.9);
-        transition: all 1s ease;
-        transition-delay: .5s;
-      }
-
-      .topleft img:hover {
-        fill: #c0211e;
-        transition: all 1s ease;
-        opacity: 1;
-        transform: scale(.95)
-      }
-
-      .topright {
-        margin-right: 2%;
-        text-transform: uppercase;
-        font-weight: bold;
-        float: right;
-      }
-
-      .topright li {
-        margin-left: 10px;
-        padding-right: 13px;
-        border-right: solid 2px white;
-      }
-
-#floater {
-  width: 50px;
-  height: 50px;
-  background-color: #c0211e;
-  position: fixed;
-  border-radius: 50%;
-  bottom: -50px;
-  right: -25px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: .3;
-  cursor: pointer;
-  transition: .5s all ease;
-}
-
-#floater.show {
-  bottom: 10px;
-  right: 10px;
-}
-
-#floater:after {
-  content: "";
-  background: url("../img/arrow.svg") no-repeat center;
-  background-size: cover;
-  font-size: 3rem;
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(180deg);
-  left: 50%;
-}
-
-        #floater:hover {
-        opacity: 1;
-      }
-
-
-/*
-      #floater:hover:after {
-        background: none;
-        content: "Back to Top";
-        font-size: 1rem;
-        text-align: center;
-      } */
-
-.main-title {
-  background: linear-gradient(to top, #111 5%, transparent 50%),
-              linear-gradient(to bottom, #111, transparent 1%),
-              url('../img/background.jpg') no-repeat center;
-  background-size: cover;
-  text-align: center;
-  margin-top: -7px;
-  padding: 10% 10% 20%;
-  text-shadow: 0 2px 15px rgba(0,0,0,.7),
-               0 2px 2px rgba(0,0,0,.5);
-}
-
-      .main-title span {
-        font-size: 2em;
-        font-weight: 500;
-        margin: auto;
-        padding-top: 5px;
-        width: 825px;
-        border-top: solid 3px #c0211e;
-        display: block;
-      }
-
-      .title-text {
-        display: inline-block;
-        transition: all 5s ease-in-out;
-        transition-delay: 2.5s;
-        cursor: default;
-      }
-      .title-text:hover {
-        transform: translateY(-10px) scale(1.2);
-        transition: all .5s ease-in-out;
-      }
-
-      .arrow {
-        width: 150px;
-        display: block;
-        opacity: 0.3;
-      }
-
-      .first {
-        margin: 50px auto;
-        padding: 50px 0 0;
-        transition: all 0.5s;
-        transition-delay: 250ms;
-        align-content: center;
-      }
-
-      .first:hover {
-        transform: translateY(75px) scale(1.1);
-        transition: all 1s;
-        opacity: 1;
-      }
 
 .container {
-  width: 75%;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 10px 10px;
-  border-top: solid 6px #c0211e;
-  padding: 5px 50px 50px;
-  margin: 150px auto;
-  display: block;
-  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
+   display          : block;
+   width            : 75%;
+   margin           : 150px auto;
+   padding          : 5px 50px 50px;
+   border-top       : solid 6px #c0211e;
+   border-radius    : 10px 10px;
+   background-color : rgba(0,0,0,0.5);
+   box-shadow       : 0 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
-
-#about {
-  margin-top: 50px;
-  height: 675px;
-  text-align: center;
-  position: relative;
-}
-
-      #about::after {
-        content: "";
-        background: url("../img/britain-flag.jpg");
-        background-size: cover;
-        border-radius: 50px 10px;
-        opacity: .1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;;
-        z-index: -1;
-      }
-
-          .first-about {
-            width: 43%;
-            float: left;
-          }
-
-          .second-about {
-            width: 43%;
-            float: right;
-          }
-
-          .first-about,
-          .second-about {
-            width: 400px;
-            margin: 0 3%;
-            text-align: justify;
-          }
-
-          .first-about img,
-          .second-about img {
-            opacity: 0.8;
-            width: 400px;
-            border-radius: 10px;
-            box-shadow: 0 0 50px 20px rgba(0,0,0,1);
-          }
-
-          .third-about {
-            text-align: justify;
-            display: block;
-            width: 300px;
-            margin: auto;
-          }
-
-          .first-about p,
-          .second-about p,
-          .third-about p {
-            border-top: solid 2px #c0211e;
-            padding-top: 5px;
-            margin-top: 3px;
-          }
-
-          .first-about h3,
-          .second-about h3,
-          .third-about h3 {
-            text-align: center;
-            margin-bottom: 0;
-          }
-
-      .second {
-        margin: 50px auto;
-        transition: all 0.5s;
-        transition-delay: 250ms;
-      }
-
-      .second:hover {
-        transform: translateY(25px) scale(1.05);
-        transition: all 1s;
-        opacity: 1;
-      }
-
-
-.header-gallery {
-        text-align: center;
-        width: 100%;
-        margin: 0 auto 0;
-        border-radius: 50px 10px 0 0;
-      }
-
-      .third {
-        margin: 25px auto;
-        transition: all 0.5s;
-        transition-delay: 250ms;
-      }
-
-      .third:hover {
-        transform: translateY(25px);
-        transition: all 0.5s;
-        opacity: 1;
-      }
-/*
-.roles-container {
-  width: 75%;
-  margin: 150px auto;
-  padding: 5px 0 100px;
-  border-radius: 50px 10px;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.3);
-  border-top: solid 7px #c0211e;
-}
-
-      .roles-container h2 {
-        width: 85%;
-        text-align: center;
-        transition: all 1s;
-        transition-delay: .25s;
-        margin: 10px auto 0;
-        border-bottom: solid 2px #c0211e;
-      }
-
-      .roles-container h2:hover {
-        transition: all 1s;
-        transform: scale(1.05);
-        text-shadow: 0 0 7px #c0211e;
-      }
-
-      .roles-box {
-        width: 85%;
-        height: 200px;
-        padding: 25px 0;
-        margin: auto;
-        text-align: justify;
-        border-radius: 0 0 5px 5px;
-        border-bottom: 2px solid rgba(192,33,30,.5);
-      }
-
-        .roles-box h3,
-        .roles-box p {
-          float: right;
-          position: relative;
-          right: 0;
-          margin: auto;
-          width: 70%;
-        }
-
-        .roles-box:nth-child(odd) h3,
-        .roles-box:nth-child(odd) p {
-          text-align: right;
-          float: left;
-        }
-
-        .icon-container {
-          width: 100px;
-          height: 100px;
-          background-color: white;
-        }*/
-
-#equipment {
-  height: 1600px;
-}
-
-      #equipment div:nth-child(odd) {
-        background-color: rgba(0, 0, 0, 0.3)
-      }
-
-      .image-container {
-        transform: scale(.85);
-        display: table-cell;
-        vertical-align: middle;
-        border-radius: 10px;
-        border-right: 4px solid rgba(192,33,30,.5);
-
-      }
-
-      .lee-enfield {
-        background: url('../img/lee-enfield.jpg') no-repeat center;
-        background-size: cover;
-      }
-
-      .sten {
-        background: url('../img/stengun.jpg') no-repeat center;
-        background-size: cover;
-      }
-
-      .bren {
-        background: url('../img/bren.jpg') no-repeat center;
-        background-size: cover;
-      }
-
-      .bazooka {
-        background: url('../img/bazooka.jpg') no-repeat center;
-        background-size: cover;
-      }
-
-      .explosives {
-        background: url('../img/explosives.jpg') no-repeat center;
-        background-size: cover;
-      }
-
-      .weapons {
-        width: 95%;
-        height: 225px;
-        padding: 15px 20px;
-        margin: 0 auto;
-        border-radius: 5px;
-        border-bottom: solid 2px rgba(192,33,30,.25);
-        vertical-align: middle;
-        display: table;
-      }
-
-      .description {
-        width: 65%;
-        padding-left: 10px;
-        margin: 0;
-        text-align: justify;
-        vertical-align: middle;
-        display: table-cell;
-      }
-
-      .description h3 {
-        margin: 0;
-      }
-
-#mods {
-  height: 1100px;
-  text-align: center;
-}
-
-        .overhead span {
-          opacity: .3;
-          font-size: 0.75em;
-        }
-
-        .overhead h3 {
-            font-size: 1.75em;
-            margin-top: 0;
-            margin-bottom: 0;
-            line-height: .9em;
-        }
-
-        .overhead p {
-            color: rgba(192,33,30,.6);
-            height: 15px;
-            margin: 0;
-            font-size: .7em;
-        }
-
-        .modlist {
-          width: 70%;
-          opacity: .35;
-          padding: 25px 0;
-          margin: 5px auto;
-          transition: 1s;
-          border-bottom: solid 2px rgba(192,33,30,.25);
-        }
-
-        .no4 {
-          border-radius: 10px;
-        }
-
-        .no4 h3 {
-          border-bottom: solid 2px rgba(192,33,30,.25);
-          font-size: 1.5em;
-          margin: 0;
-        }
-
-        .modlist:hover {
-          opacity: .8;
-          transition: .5s;
-        }
-
-        .modlist li {
-          margin: 0 5px 0 0;
-          border-right: solid 2px white;
-        }
-
-        .modlist p {
-          margin: 0;
-          padding: 25px 0 5px;
-        }
-
-        .modlist img {
-          width: 150px;
-        }
-
-        .last-modlist {
-          border-bottom: none;
-        }
-
-
-#join {
-  height: 570px;
-}
-
-        #join h2:hover {
-          transform: none;
-        }
-
-        .uncle-sam {
-          width: 600px;
-          height: 600px;
-          background-image: url("../img/we-want-you.svg");
-          background-size: cover;
-          float: right;
-          position: relative;
-          top: -17%;
-          right: 0;
-          margin: auto;
-          opacity: .1;
-        }
-
-        .join-us {
-          margin-left: 5%;
-          width: 40%;
-          float: left;
-        }
-
-        .join-us a:link {
-          color: white;
-          cursor: pointer;
-        }
-
-        .join-us h4 {
-          cursor: pointer;
-          color: white;
-          font-size: 1.5em;
-          margin: 0;
-          padding: 10px;
-          transition: .5s;
-          transition-delay: .1s
-        }
-
-        .join-us h4:hover {
-          transform: translateX(150px) scale(1.5);
-        }
-
-        .people {
-          border-radius: 25px;
-          margin: 50px 0;
-          border-left: 2px solid rgba(192,33,30,.5);
-          padding: 5px 0;
-        }

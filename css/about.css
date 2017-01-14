@@ -1,0 +1,78 @@
+#about {
+   position   : relative;
+   height     : 675px;
+   margin-top : 50px;
+   text-align : center;
+}
+
+#about::after {
+   content         : "";
+   position        : absolute;
+   top             : 0;
+   right           : 0;
+   bottom          : 0;
+   left            : 0;
+   opacity         : .1;
+   border-radius   : 50px 10px;
+   background      : url("../img/britain-flag.jpg");
+   background-size : cover;
+}
+
+.first-about {
+   width : 43%;
+   float : left;
+}
+
+.second-about {
+   width : 43%;
+   float : right;
+}
+
+.first-about,
+.second-about {
+   width      : 400px;
+   margin     : 0 3%;
+   text-align : justify;
+}
+
+.first-about img,
+.second-about img {
+   width         : 400px;
+   opacity       : 0.8;
+   border-radius : 10px;
+   box-shadow    : 0 0 50px 20px rgba(0,0,0,1);
+}
+
+.third-about {
+   display    : block;
+   width      : 300px;
+   margin     : auto;
+   text-align : justify;
+}
+
+.first-about p,
+.second-about p,
+.third-about p {
+   margin-top  : 3px;
+   padding-top : 5px;
+   border-top  : solid 2px #c0211e;
+}
+
+.first-about h3,
+.second-about h3,
+.third-about h3 {
+   margin-bottom : 0;
+   text-align    : center;
+}
+
+.second {
+   margin           : 50px auto;
+   transition       : all 0.5s;
+   transition-delay : 250ms;
+}
+
+.second:hover {
+   opacity    : 1;
+   transform  : translateY(25px) scale(1.05);
+   transition : all 1s;
+}
