@@ -188,14 +188,19 @@ a:hover {
   background-color: #c0211e;
   position: fixed;
   border-radius: 50%;
-  bottom: 10px;
-  right: 10px;
+  bottom: -50px;
+  right: -25px;
   vertical-align: middle;
-  transition: .25s all ease;
   text-transform: uppercase;
   font-weight: bold;
   opacity: .3;
   cursor: pointer;
+  transition: .5s all ease;
+}
+
+#floater.show {
+  bottom: 10px;
+  right: 10px;
 }
 
 #floater:after {
@@ -214,6 +219,8 @@ a:hover {
         #floater:hover {
         opacity: 1;
       }
+
+
 /*
       #floater:hover:after {
         background: none;
