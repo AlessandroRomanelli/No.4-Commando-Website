@@ -1,8 +1,12 @@
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
+  width: 100%;
   position: relative;
   margin: 0 auto 0;
+}
+
+.slideshow-container img {
+  border-radius: 30px;
 }
 
 /* Next & previous buttons */
@@ -43,6 +47,7 @@
   width: 100%;
   text-align: center;
   background-color: rgba(0,0,0,.75);
+  border-radius: 0 0 30px 30px;
 }
 
 /* Number text (1/3 etc) */
@@ -51,7 +56,10 @@
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 2em;
+  left: 2em;
+  background-color: rgba(0,0,0,.75);
+  border-radius: 10px;
 }
 
 /* The dots/bullets/indicators */
