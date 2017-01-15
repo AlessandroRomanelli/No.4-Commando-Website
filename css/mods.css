@@ -26,7 +26,7 @@
    width         : 70%;
    margin        : 5px auto;
    padding       : 25px 0;
-   opacity       : .35;
+   opacity       : .5;
    border-bottom : solid 2px rgba(192,33,30,.25);
    transition    : 1s;
 }
@@ -42,7 +42,7 @@
 }
 
 .modlist:hover {
-   opacity    : .8;
+   opacity    : 1;
    transition : .5s;
 }
 
